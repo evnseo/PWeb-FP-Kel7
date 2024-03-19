@@ -74,7 +74,7 @@ function play(){
         document.addEventListener('keydown', (e) => {
             if(e.key == 'ArrowUp' || e.key == ' '){
                 img.src = 'images/Bird-2.png';
-                bird_dy = -7.6;
+                bird_dy = -9;
             }
         });
 
