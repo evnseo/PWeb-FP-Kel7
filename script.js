@@ -3,11 +3,11 @@ let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
 let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
+let sound_game = new Audio('sounds effect/lagu.mp3');
 
-// getting bird element properties
+// properties bird element
 let bird_props = bird.getBoundingClientRect();
 
-// This method returns DOMReact -> top, right, bottom, left, x, y, width and height
 let background = document.querySelector('.background').getBoundingClientRect();
 
 let score_val = document.querySelector('.score_val');
@@ -31,6 +31,7 @@ document.addEventListener('keydown', (e) => {
         score_title.innerHTML = 'Score : ';
         score_val.innerHTML = '0';
         message.classList.remove('messageStyle');
+        sound_game.play()
         play();
     }
 });
