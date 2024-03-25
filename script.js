@@ -5,7 +5,7 @@ let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
 let sound_game = new Audio('sounds effect/lagu.mp3');
 
-// properties bird element
+// properti elemen burung
 let bird_props = bird.getBoundingClientRect();
 
 let background = document.querySelector('.background').getBoundingClientRect();
@@ -19,7 +19,7 @@ img.style.display = 'none';
 message.classList.add('messageStyle');
 
 document.addEventListener('keydown', (e) => {
-    
+    //mulai game dengan menekan tombol enter
     if(e.key == 'Enter' && game_state != 'Play'){
         document.querySelectorAll('.pipe_sprite').forEach((e) => {
             e.remove();
@@ -47,7 +47,7 @@ function play(){
 
             if(pipe_sprite_props.right <= 0){
                 element.remove();
-            }else{
+            }else{ //cek tabrakan
                 if(bird_props.left < pipe_sprite_props.left + pipe_sprite_props.width && bird_props.left + bird_props.width > pipe_sprite_props.left && bird_props.top < pipe_sprite_props.top + pipe_sprite_props.height && bird_props.top + bird_props.height > pipe_sprite_props.top){
                     game_state = 'End';
                     message.innerHTML = 'Game Over'.fontcolor('red') + '<br>Press Enter To Restart';
@@ -55,7 +55,7 @@ function play(){
                     img.style.display = 'none';
                     sound_die.play();
                     return;
-                }else{
+                }else{ //penambahan skor jika melewati pipa
                     if(pipe_sprite_props.right < bird_props.left && pipe_sprite_props.right + move_speed >= bird_props.left && element.increase_score == '1'){
                         score_val.innerHTML =+ score_val.innerHTML + 1;
                         sound_point.play();
@@ -85,7 +85,7 @@ function play(){
             }
         });
 
-        if(bird_props.top <= 0 || bird_props.bottom >= background.bottom){
+        if(bird_props.top <= 0 || bird_props.bottom >= background.bottom){ //jika menabrak layar bawah/atas maka game end
             game_state = 'End';
             message.style.left = '28vw';
             window.location.reload();
@@ -98,9 +98,9 @@ function play(){
     }
     requestAnimationFrame(apply_gravity);
 
-    let pipe_seperation = 0;
+    let pipe_seperation = 0; //pemisahan pipa
 
-    let pipe_gap = 35;
+    let pipe_gap = 40; //celah pipa
 
     function create_pipe(){ //membuat rintangan pipa"
         if(game_state != 'Play') return;
