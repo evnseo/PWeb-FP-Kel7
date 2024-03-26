@@ -37,7 +37,7 @@
                 <h2>Game Scenario</h2>
                 <hr>
                 <h3>Premis Game</h3>
-                <p>Pemain mengontrol seekor burung kecil yang terbang secara horizontal di layar. Burung ini agak kikuk dan cenderung terbang dengan gerakan yang tidak stabil dan acak.</p>
+                <p>Dalam game ini, pemain mengontrol seekor burung yang harus menavigasi jalan melintasi serangkaian pipa-pipa dengan menekan tombol untuk membuat burung itu terbang.</p>
                 <h3>Gameplay</h3>
                 <li>Tujuan utama dari permainan adalah untuk membuat burung terbang melewati celah-celah di antara pipa-pipa yang muncul secara vertikal di layar.</li>
                 <li>Pemain mengendalikan burung dengan menekan tombol, yang akan membuat burung melambung ke atas sebentar.</li>
@@ -57,23 +57,7 @@
                 <hr>
                 <p>Berikut merupakan gambar dari flowchart game yang akan kami rancang</p>
                 <img src="images-web/flowchart.png">
-                <p>Berikut adalah penjelasan alurnya:</p>
-                <p>1. Start Game: Permainan dimulai disini</p>
-                <p>2. Inisialisasi Permainan:</p>
-                <li>Atur Skor ke 0</li>
-                <li>Hasilkan Pipa</li>
-                <p>3. Putaran Permainan:</p>
-                <li>Pindahkan Burung</li>
-                <li>Menangani Input (Pencet Tombol untuk Mengepak)</li>
-                <li>Perbarui Pipa (Pindahkan Pipa, Hasilkan Pipa Baru)</li>
-                <p>4. Periksa Tabrakan:</p>
-                <li>Dengan Pipa</li>
-                <li>Dengan Tepi Layar</li>
-                <p>5. Game Over? (Terjadi Saat Burung Telah Menabrak)</p>
-                <li>Jika Ya, maka Tampilkan Layar Game Over dan Tampilkan Skor Akhir</li>
-                <li>Jika Tidak, lanjutkan putaran permainan</li>
-                <p>FLowchart tersebut menunjukkan urutan tindakan dan keputusan dalam permainan. Dimulai dengan inisialisasi permainan, lalu memasuki sebuah loop di mana pemain dapat menggerakkan burung dan menangani input. Permainan memeriksa tabrakan dengan pipa dan tepi layar. Jika permainan selesai, maka akan muncul layar permainan selesai dengan skor akhir; jika tidak, maka akan melanjutkan perulangan permainan.</p>
-
+                <p>Flowchart tersebut menunjukkan urutan tindakan dan keputusan dalam permainan. Dimulai dengan start lalu new game, setelah itu decision yang mengarah ke visualizing (mengatur background dan skor) dan waiting (play sound, animation, etc.). Selanjutnya playing, disini adalah proses saat pengguna memainkan game, memanggil handle input dan memperbarui pipa. Jika burung tertabrak pipa/batas layar maka lanjut ke end. Pada proses end pengguna dapat restart dan mengulang game dari awal sehingga terjadi game loop pada proses tersebut.</p>
             </section>
 
             <section id="ourteam">
