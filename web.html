@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="ico" href="images-web/bird_1.ico"/>
+    <title>Final Project Pemrograman Web Kelompok 7</title>
+    <link rel="stylesheet" href="web-style.css">
+</head>
+    <body>
+        <header id="header">
+            <h1>Clumsy Little Bird</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#scenario">Scenario</a>
+                <a href="#flowchart">Flowchart</a>
+                <a href="#ourteam">Our Team</a>
+                <a href="biodata.html">Our Team Biodata</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </header>
+
+        <main id="content">
+            <section id="about">
+                <div class="about-me">
+                <img src="images-web/bird_1.png">
+                    <div class="about-text">
+                    <h2>About</h2>
+                    <hr>
+                    <p>Untuk memenuhi tugas project UTS mata kuliah Pemrograman Web, kami dari kelompok 7 akan merancang sebuah game bernama "Clumsy Little Bird". Tujuan dari pembuatan game HTML "Clumsy Little Bird" ini adalah sebagai pembelajaran dasar dalam pengembangan web serta pemahaman pokok terhadap pembuatan sebuah game. Dengan memanfaatkan HTML, CSS, dan JavaScript, kami dapat mempelajari bagaimana cara membuat kerangka dasar game dengan tepat, mengatur interaksi pemain, dan menerapkan aturan main yang cukup sederhana dan mudah dipraktikkan.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scenario">
+                <h2>Game Scenario</h2>
+                <hr>
+                <h3>Premis Game</h3>
+                <p>Pemain mengontrol seekor burung kecil yang terbang secara horizontal di layar. Burung ini agak kikuk dan cenderung terbang dengan gerakan yang tidak stabil dan acak.</p>
+                <h3>Gameplay</h3>
+                <li>Tujuan utama dari permainan adalah untuk membuat burung terbang melewati celah-celah di antara pipa-pipa yang muncul secara vertikal di layar.</li>
+                <li>Pemain mengendalikan burung dengan menekan tombol, yang akan membuat burung melambung ke atas sebentar.</li>
+                <li>Jika burung menabrak pipa atau menyentuh bagian atas atau bawah layar, maka permainan akan berakhir.</li>
+                <li>Semakin jauh burung terbang, semakin tinggi skor yang diperoleh.</li>
+                <h3>Tantangan</h3>
+                <p>Tingkat kesulitan meningkat seiring bertambahnya skor, pipa-pipa akan muncul lebih cepat dan celah di antaranya menjadi lebih sempit.</p>
+                <h3>Elemen Visual</h3>
+                <li>Latar belakang sederhana, mungkin dengan awan-awan atau pemandangan langit yang berwarna pink.</li>
+                <li>Desain burung yang lucu dan menggemaskan, dengan ekspresi wajah yang menampilkan kikuknya saat terbang.</li>
+                <li>Pipa-pipa yang merupakan rintangan untuk burung tersebut</li>
+                <hr>
+            </section>
+
+            <section id="flowchart">
+                <h2>Game Flowchart</h2>
+                <hr>
+                <p>Berikut merupakan gambar dari flowchart game yang akan kami rancang</p>
+                <img src="images-web/flowchart.png">
+                <p>Berikut adalah penjelasan alurnya:</p>
+                <p>1. Start Game: Permainan dimulai disini</p>
+                <p>2. Inisialisasi Permainan:</p>
+                <li>Atur Skor ke 0</li>
+                <li>Hasilkan Pipa</li>
+                <p>3. Putaran Permainan:</p>
+                <li>Pindahkan Burung</li>
+                <li>Menangani Input (Pencet Tombol untuk Mengepak)</li>
+                <li>Perbarui Pipa (Pindahkan Pipa, Hasilkan Pipa Baru)</li>
+                <p>4. Periksa Tabrakan:</p>
+                <li>Dengan Pipa</li>
+                <li>Dengan Tepi Layar</li>
+                <p>5. Game Over? (Terjadi Saat Burung Telah Menabrak)</p>
+                <li>Jika Ya, maka Tampilkan Layar Game Over dan Tampilkan Skor Akhir</li>
+                <li>Jika Tidak, lanjutkan putaran permainan</li>
+                <p>FLowchart tersebut menunjukkan urutan tindakan dan keputusan dalam permainan. Dimulai dengan inisialisasi permainan, lalu memasuki sebuah loop di mana pemain dapat menggerakkan burung dan menangani input. Permainan memeriksa tabrakan dengan pipa dan tepi layar. Jika permainan selesai, maka akan muncul layar permainan selesai dengan skor akhir; jika tidak, maka akan melanjutkan perulangan permainan.</p>
+
+            </section>
+
+            <section id="ourteam">
+                <h2>Our Team</h2>
+                <hr>
+                <div class="our-team">
+                    <div class="biodata-card" id="haykal">
+                        <img src="images-web/haykal.png" alt="biodata 1" class="biodata-img">
+                        <h2 class="biodata-title">Haykal Hardya Anggara</h2>
+                        <h3 class="biodata-title">Anggota 1</h3>
+                        <p class="biodata">Haykal Hardya Anggara, berumur 19 tahun. Posisi saya pada tim ini yaitu sebagai Programmer.</p>
+                    </div>
+                    <div class="biodata-card" id="kimberlie">
+                        <img src="images-web/kimberlie.jpeg" alt="biodata 2" class="biodata-img">
+                        <h2 class="biodata-title">Kimberlie Cindy K.</h2>
+                        <h3 class="biodata-title">Anggota 2</h3>
+                        <p class="biodata">Kimberlie Cindy Kolopaking, berumur 19 tahun. Posisi saya pada tim ini yaitu sebagai Designer.</p>
+                    </div>
+                    <div class="biodata-card" id="luthfi">
+                        <img src="images-web/luthfi.jpeg" alt="biodata 3" class="biodata-img">
+                        <h2 class="biodata-title">Luthfi Azmi Sa’diyah</h2>
+                        <h3 class="biodata-title">Anggota 3</h3>
+                        <p class="biodata">Luthfi Azmi Sa’diyah, berumur 20 tahun. Posisi saya pada tim ini yaitu sebagai Project Manager.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2024 Pemrograman Web Kelompok 7</p>
+        </footer>
+    </body>
+</html>

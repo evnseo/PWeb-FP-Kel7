@@ -53,6 +53,7 @@ function play(){
                     message.innerHTML = 'Game Over'.fontcolor('red') + '<br>Press Enter To Restart';
                     message.classList.add('messageStyle');
                     img.style.display = 'none';
+                    score_val.innerHTML = score_val.innerHTML
                     sound_die.play();
                     return;
                 }else{ //penambahan skor jika melewati pipa
